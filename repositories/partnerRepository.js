@@ -8,10 +8,6 @@ const getByDocument = async (document) => {
     return await partnerModel.findOne({document: document});
 }
 
-const getAll = async () => {
-    return await partnerModel.find({});
-}
-
 const getById = async (id) => {
     return await partnerModel.findById(id);
 }
@@ -34,4 +30,4 @@ const searchPartnersOrderedByDistance = async (point) => {
 }
 
 
-module.exports = {create, getByDocument, getAll, getById, searchPartnersOrderedByDistance};
+module.exports = {create, getByDocument, getById, searchPartnersOrderedByDistance};

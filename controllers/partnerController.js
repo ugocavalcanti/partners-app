@@ -13,19 +13,7 @@ const addPartner = async (req, res) => {
     }
 }
 
-const getListPartners = async (req, res) => {
-    try {
-        const partners = await partnerService.getAll();
-        res.status(200).json({
-            success: true,
-            data: partners
-        })
-    } catch (error) {
-        res.status(500).send({ error: error.message})
-    }
-};
-
-const getPartnerId = async (req, res) => {
+const getPartnerById = async (req, res) => {
     try {
         const id = req.params.id;
         const partner = await partnerService.getById(id);
@@ -65,4 +53,4 @@ const searchNearestPartner = async (req, res) => {
     }
 }
 
-module.exports = {addPartner, getListPartners, getPartnerId, searchNearestPartner};
+module.exports = {addPartner, getPartnerById, searchNearestPartner};

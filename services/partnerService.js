@@ -11,10 +11,6 @@ const create = async (partner) => {
     }
 }
 
-const getAll = async () => {
-    return await partnerRepository.getAll();
-}
-
 const getById = async (id) => {
     return await partnerRepository.getById(id);
 }
@@ -29,4 +25,4 @@ const searchNearestPartner = async (point) => {
     }
 }
 
-module.exports = {create, getAll, getById, searchNearestPartner}
+module.exports = {create, getById, searchNearestPartner}
