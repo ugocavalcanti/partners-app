@@ -10,13 +10,7 @@ Clone this project and install your dependencies
 npm install
 ```
 
-In a terminal, run the docker compose to up a database
-
-```
-docker-compose up
-```
-
-Finally, run a node server to up the services 
+Finally, run a node server to up the services and access them in http://localhost:3000
 
 ```
 npm run dev
@@ -40,6 +34,21 @@ SEARCH NEAREST PARTNER
 
 ```
 http://localhost:3000/partner/<longitude>/<latitude>
+```
+
+#Tests
+
+To run the tests, you need to execute a container for a new database, exclusively to tests.
+In a terminal, go to the root directory of the project e run the docker compose to up a database
+
+```
+docker-compose up
+```
+
+In another terminal, run the command below
+
+```
+npm run test
 ```
 
 ## Deploy
