@@ -1,0 +1,7 @@
+{
+    "name": "partners-app",
+    "version": 2,
+    "env": {
+      "MONGO_DB_CONNECTION": "@partners-app"
+    }
+  }
