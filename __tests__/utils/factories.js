@@ -1,6 +1,6 @@
 const FactoryGirl = require('factory-girl');
 const { factory } = require('factory-girl');
-const Partner = require("../../models/Partner");
+const Partner = require("../../src/models/Partner");
 
 factory.setAdapter(new FactoryGirl.MongooseAdapter());
 

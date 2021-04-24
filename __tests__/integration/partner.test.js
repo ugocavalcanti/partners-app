@@ -1,7 +1,7 @@
 const request = require("supertest");
-const app = require("../../api");
+const app = require("../../src/api");
 const { factory, partnerObject } = require("../utils/factories");
-const Partner = require("../../models/Partner");
+const Partner = require("../../src/models/Partner");
 
 
 afterAll(async () => {

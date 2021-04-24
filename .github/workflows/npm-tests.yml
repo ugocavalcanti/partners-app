@@ -17,3 +17,8 @@ jobs:
           node-version: 12
       - run: npm install
       - run: npm run test
+      env:
+        environment: test
+        PORT: 3000
+        MONGO_DB_CONNECTION: mongodb+srv://ugocavalcanti:T2ygxbyHvJpORTLi@ugocluster.snyy3.mongodb.net/zedelivery_test?authSource=admin&replicaSet=atlas-55rajo-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true
+
