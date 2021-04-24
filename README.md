@@ -83,7 +83,20 @@ npm run test
 ```
 
 ## Deploy
-Lero lero lero lero
+
+To deploy this application, you must send the directory "src"(and your content) and the "package.json" 
+to your provider. In addition, in this same, provider, you must configure the environment variables:
+```
+environment
+
+PORT
+
+MONGO_DB_CONNECTION
+```
+
+Finally, you have to install all the dependencies and run the API application. Usually, the providers do 
+this for you with them own configurations.
+
 
 ## Author
 Ugo da Costa Cavalcanti - Software Engineer - https://www.linkedin.com/in/ugocavalcanti/
